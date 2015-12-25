@@ -18,7 +18,13 @@
     <color name="light_blue">#33ccff</color>
 
     <string name="title_activity_main">MainActivity</string>
-    
     <string name="header_bar_back">Back</string>
     <string name="header_bar_submit">Submit</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="login_user_name">Please input SAP ID</string>
+	<string name="login_password">Please input password</string>
+	<string name="login_remember_me">Remember me</string>
+	<string name="login">Logon</string>
+	<string name="clear_info">Clear</string>
 </resources>

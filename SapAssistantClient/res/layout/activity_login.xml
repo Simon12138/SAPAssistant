@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.assistant.sap.LoginActivity" >
+
+    <TextView
+        android:id="@+id/sap_assistant_logo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="30dp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/sap_assistant_login_div"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/login_user_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/login_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="@string/login_user_name"
+                android:textSize="23dp"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_password_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="@string/login_password"
+                android:textSize="23dp"
+                android:inputType="textPassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sap_assistant_buttons_div"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/login_remember_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:text="@string/login_remember_me" />
+        
+        <LinearLayout
+            android:id="@+id/login_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+			<Button android:id="@+id/login_button"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:layout_margin="15dp"
+			    android:padding="5dp"
+			    android:textSize="20dp"
+			    android:background="@color/light_blue"
+			    android:textColor="@color/white"
+			    android:text="@string/login"/>
+			
+			<Button android:id="@+id/clear_button"
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:layout_margin="15dp"
+			    android:padding="5dp"
+			    android:textSize="20dp"
+			    android:background="@color/light_blue"
+			    android:textColor="@color/white"
+			    android:text="@string/clear_info"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
