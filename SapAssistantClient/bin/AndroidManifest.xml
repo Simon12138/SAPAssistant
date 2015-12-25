@@ -27,22 +27,16 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-
-        
         <activity
             android:name=".DemoActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <!-- bong sdk 必须的一些组件声明 -->
         <activity
             android:name="cn.bong.android.sdk.AuthActivity"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
 
         <receiver
             android:name="cn.bong.android.sdk.BongDataReceiver"
@@ -54,6 +48,19 @@
 
         <service android:name="cn.bong.android.sdk.BlueService" />
         <!-- bong sdk 必须的一些组件声明 over -->
+        <activity
+            android:name=".BongAuthActivity"
+            android:label="@string/title_activity_bong_auth" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
     </application>
 
 </manifest>

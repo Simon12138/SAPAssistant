@@ -98,7 +98,7 @@ public class DemoActivity extends Activity {
 					refreshButton();
 				} else {
 					// ¿ªÊ¼ÊÚÈ¨
-					BongManager.bongAuth(DemoActivity.this, "SapAssistantClient",
+					BongManager.bongAuth(DemoActivity.this, ShareData.AUTH_INSTANCE,
 							new AuthUiListener() {
 								@Override
 								public void onError(AuthError error) {

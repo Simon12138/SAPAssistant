@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_grey_bg"
+    tools:context="com.assistant.sap.BongAuthActivity" >
+    
+    <include layout="@layout/headerbar" />"
+
+    <Button android:id="@+id/bong_auth_btn"
+        android:layout_centerInParent="true"
+        android:text="@string/bong_auth_btn"
+        android:background="@color/main_btn"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        />
+
+</RelativeLayout>
