@@ -35,36 +35,90 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int item01=0x7f020001;
+        public static final int item02=0x7f020002;
+        public static final int item03=0x7f020003;
+        public static final int item04=0x7f020004;
+        public static final int item05=0x7f020005;
+        public static final int item06=0x7f020006;
+        public static final int page_indicator_focused=0x7f020007;
+        public static final int page_indicator_unfocused=0x7f020008;
     }
     public static final class id {
-        public static final int action_settings=0x7f090010;
+        public static final int action_settings=0x7f090039;
         public static final int bong_auth_btn=0x7f090000;
-        public static final int header_bar_back=0x7f09000d;
-        public static final int header_bar_content=0x7f09000e;
-        public static final int header_bar_submit=0x7f09000f;
+        public static final int clear_button=0x7f090010;
+        public static final int header_bar_back=0x7f09002d;
+        public static final int header_bar_content=0x7f09002e;
+        public static final int header_bar_submit=0x7f09002f;
+        public static final int login_button=0x7f09000f;
+        public static final int login_buttons_container=0x7f09000e;
         public static final int login_name=0x7f090001;
+        public static final int login_password=0x7f09000b;
+        public static final int login_password_container=0x7f09000a;
         public static final int login_pwd=0x7f090002;
+        public static final int login_remember_me=0x7f09000d;
         public static final int login_submit=0x7f090003;
-        public static final int main_balance_div=0x7f09000b;
-        public static final int main_div_1=0x7f090006;
-        public static final int main_div_2=0x7f090009;
-        public static final int main_div_3=0x7f09000c;
-        public static final int main_health_div=0x7f090008;
-        public static final int main_unknow_div=0x7f09000a;
-        public static final int main_workspace_div=0x7f090007;
+        public static final int login_user_name=0x7f090009;
+        public static final int login_user_name_container=0x7f090008;
+        public static final int lunch_viewGroup=0x7f09002b;
+        public static final int lunch_viewPager=0x7f09002a;
+        public static final int main_balance_div=0x7f090028;
+        public static final int main_div_1=0x7f090011;
+        public static final int main_div_2=0x7f090026;
+        public static final int main_div_3=0x7f090029;
+        public static final int main_health_div=0x7f09001c;
+        public static final int main_healthy__container=0x7f090023;
+        public static final int main_healthy_calories=0x7f090022;
+        public static final int main_healthy_calories_container=0x7f090020;
+        public static final int main_healthy_calories_lable=0x7f090021;
+        public static final int main_healthy_distance=0x7f09001f;
+        public static final int main_healthy_distance_container=0x7f09001d;
+        public static final int main_healthy_distance_lable=0x7f09001e;
+        public static final int main_healthy_steps=0x7f090025;
+        public static final int main_healthy_steps_lable=0x7f090024;
+        public static final int main_unknow_div=0x7f090027;
+        public static final int main_workspace_div=0x7f090012;
+        public static final int main_workspace_meeting_amount=0x7f090015;
+        public static final int main_workspace_meeting_container=0x7f090013;
+        public static final int main_workspace_meeting_lable=0x7f090014;
+        public static final int main_workspace_next_meeting=0x7f09001b;
+        public static final int main_workspace_next_meeting_container=0x7f090019;
+        public static final int main_workspace_next_meeting_lable=0x7f09001a;
+        public static final int main_workspace_next_meetingtime=0x7f090018;
+        public static final int main_workspace_next_meetingtime_container=0x7f090016;
+        public static final int main_workspace_next_meetingtime_lable=0x7f090017;
+        public static final int sap_assistant_buttons_div=0x7f09000c;
+        public static final int sap_assistant_login_div=0x7f090007;
+        public static final int sap_assistant_logo=0x7f090006;
         public static final int shouquan_btn=0x7f090004;
+        public static final int workspace_item_check_box=0x7f090033;
+        public static final int workspace_item_check_container=0x7f090031;
+        public static final int workspace_item_detail_container=0x7f090034;
+        public static final int workspace_item_detail_location=0x7f090036;
+        public static final int workspace_item_detail_subject=0x7f090035;
+        public static final int workspace_item_line=0x7f090032;
+        public static final int workspace_item_meeting_time=0x7f090030;
+        public static final int workspace_item_remain_time=0x7f090038;
+        public static final int workspace_item_remain_time_container=0x7f090037;
+        public static final int workspace_items_list_view=0x7f09002c;
         public static final int zhengdong_btn=0x7f090005;
     }
     public static final class layout {
         public static final int activity_bong_auth=0x7f030000;
         public static final int activity_demo=0x7f030001;
-        public static final int activity_main=0x7f030002;
-        public static final int headerbar=0x7f030003;
+        public static final int activity_login=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int activity_work_space_list=0x7f030004;
+        public static final int headerbar=0x7f030005;
+        public static final int work_space_item=0x7f030006;
     }
     public static final class menu {
         public static final int bong_auth=0x7f080000;
         public static final int demo=0x7f080001;
-        public static final int main=0x7f080002;
+        public static final int login=0x7f080002;
+        public static final int main=0x7f080003;
+        public static final int work_space_list=0x7f080004;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -72,10 +126,18 @@ public final class R {
          */
         public static final int app_name=0x7f050000;
         public static final int bong_auth_btn=0x7f050003;
+        public static final int clear_info=0x7f05000d;
         public static final int header_bar_back=0x7f050005;
         public static final int header_bar_submit=0x7f050006;
+        public static final int hello_world=0x7f050008;
+        public static final int login=0x7f05000c;
+        public static final int login_password=0x7f05000a;
+        public static final int login_remember_me=0x7f05000b;
+        public static final int login_user_name=0x7f050009;
         public static final int title_activity_bong_auth=0x7f050002;
+        public static final int title_activity_login=0x7f050007;
         public static final int title_activity_main=0x7f050004;
+        public static final int title_activity_work_space_list=0x7f05000e;
     }
     public static final class style {
         /** 

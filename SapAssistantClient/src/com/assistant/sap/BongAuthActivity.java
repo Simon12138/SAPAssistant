@@ -9,8 +9,6 @@ import cn.bong.android.sdk.model.http.auth.AuthUiListener;
 import cn.bong.android.sdk.utils.DialogUtil;
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;

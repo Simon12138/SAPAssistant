@@ -12,7 +12,7 @@
     <color name="main_grey_bg">#aaaaaa</color>
     <color name="main_btn">#fa8072</color>
     <color name="white">#ffffff</color>
-    <color name="green">#33ffdd</color>
+    <color name="green">#11ffaa</color>
     <color name="blue">#5555ff</color>
     <color name="pink">#ffa488</color>
     <color name="light_blue">#33ccff</color>
@@ -22,9 +22,11 @@
     <string name="header_bar_submit">Submit</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="hello_world">Hello world!</string>
-	<string name="login_user_name">Please input SAP ID</string>
-	<string name="login_password">Please input password</string>
-	<string name="login_remember_me">Remember me</string>
-	<string name="login">Logon</string>
-	<string name="clear_info">Clear</string>
+    <string name="login_user_name">Please input SAP ID</string>
+    <string name="login_password">Please input password</string>
+    <string name="login_remember_me">Remember me</string>
+    <string name="login">Logon</string>
+    <string name="clear_info">Clear</string>
+    <string name="title_activity_work_space_list">WorkSpaceListActivity</string>
+
 </resources>
