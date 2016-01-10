@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SapAssistantAdmin</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    
+    <color name="blue">#5555ff</color>
+    <color name="pink">#ffa488</color>
+    <color name="green">#00dddd</color>
+    
+    <string name="door_type">门禁刷卡</string>
+    <string name="free_food_type">免费刷卡</string>
+    <string name="food_type">消费刷卡</string>
+
+</resources>

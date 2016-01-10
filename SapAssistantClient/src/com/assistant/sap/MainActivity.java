@@ -42,6 +42,9 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		bindView();
 		initData();
+		adapter = new LunchImagesAdapter(mImageViews);
+		lunchViewPager.setAdapter(adapter);
+		lunchViewPager.setCurrentItem((mImageViews.size()) * 100);		
 		setListener();
 	}
 
@@ -55,9 +58,6 @@ public class MainActivity extends Activity {
 
 		lunchViewGroup = (ViewGroup) findViewById(R.id.lunch_viewGroup);
 		lunchViewPager = (ViewPager) findViewById(R.id.lunch_viewPager);
-		adapter = new LunchImagesAdapter(mImageViews);
-		lunchViewPager.setAdapter(adapter);
-		lunchViewPager.setCurrentItem((mImageViews.size()) * 100);
 	}
 
 	private void initData() {
@@ -68,7 +68,7 @@ public class MainActivity extends Activity {
 						+ " \"next_meeting_start_time\" : \"17:00\", \"next_meeting_end_time\" : \"18:00\"}]");
 		if (workspaceResults.getJSONObject(0).getIntValue("code") == 200) {
 			meetingAmountTxt.setText(workspaceResults.getJSONObject(1)
-					.getIntValue("meeting_amount"));
+					.getIntValue("meeting_amount")+"");
 			String nextMeetingTime = "";
 			nextMeetingTime += workspaceResults.getJSONObject(1).getString(
 					"next_meeting_start_time");
@@ -96,7 +96,7 @@ public class MainActivity extends Activity {
 		for (int i = 0; i < imgIds.size(); i++) {
 			ImageView imageView = new ImageView(this);
 			imageView.setLayoutParams(new LayoutParams(10, 10));
-			tips.set(i, imageView);
+			tips.add(imageView);
 			if (i == 0) {
 				tips.get(i).setBackgroundResource(
 						R.drawable.page_indicator_focused);
@@ -112,9 +112,9 @@ public class MainActivity extends Activity {
 			lunchViewGroup.addView(imageView, layoutParams);
 		}
 
-		for (int i = 0; i < mImageViews.size(); i++) {
+		for (int i = 0; i < imgIds.size(); i++) {
 			ImageView imageView = new ImageView(this);
-			mImageViews.set(i, imageView);
+			mImageViews.add(imageView);
 			imageView.setBackgroundResource(imgIds.get(i));
 		}
 	}

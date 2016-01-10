@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sap.assistant.admin.MainActivity" >
+
+    <TextView
+        android:id="@+id/swid_type"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="@string/door_type"
+        android:textColor="#ffffff"
+        android:textSize="30sp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/price_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/food_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:hint="请输入消费金额"
+            android:inputType="number"
+            android:visibility="invisible" />
+        <Button
+            android:id="@+id/price_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#aaaaaa"
+            android:text="门禁刷卡"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/type_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/door_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:text="@string/door_type"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/free_food_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/pink"
+            android:text="@string/free_food_type"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/food_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:text="@string/food_type"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -50,11 +50,11 @@ public class WorkSpaceListActivity extends Activity {
 		items.add(map2);
 		
 		Map<String, Object> map3 = new HashMap<String, Object>();
-		map2.put("starttime", "14:00");
-		map2.put("check", false);
-		map2.put("subject", "Drink Tea Together");
-		map2.put("location", "MR PVG03 C3.1");
-		map2.put("remaintime", "5h more");
+		map3.put("starttime", "14:00");
+		map3.put("check", false);
+		map3.put("subject", "Drink Tea Together");
+		map3.put("location", "MR PVG03 C3.1");
+		map3.put("remaintime", "5h more");
 		items.add(map3);
 		adapter.notifyDataSetChanged();
 	}

@@ -3,6 +3,7 @@ package com.assistant.sap;
 import com.assistant.sap.util.ShareData;
 
 import cn.bong.android.sdk.BongManager;
+import cn.bong.android.sdk.config.Environment;
 import cn.bong.android.sdk.model.http.auth.AuthError;
 import cn.bong.android.sdk.model.http.auth.AuthInfo;
 import cn.bong.android.sdk.model.http.auth.AuthUiListener;
@@ -21,6 +22,10 @@ public class BongAuthActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_bong_auth);
+		BongManager.initialize(this, "1415266387250", "",
+				"7d9b930cabff430a96adce868f90fc85");
+		BongManager.setDebuged(true);
+		BongManager.setEnvironment(Environment.Daily);
 		obtain_authBtn = (Button) findViewById(R.id.bong_auth_btn);
 		obtain_authBtn.setOnClickListener(new OnClickListener() {
 

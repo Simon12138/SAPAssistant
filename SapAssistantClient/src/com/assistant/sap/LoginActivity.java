@@ -41,7 +41,7 @@ public class LoginActivity extends Activity {
 	}
 	
 	private void initData(){
-		if(login_passwordEdt.getText().toString().equals("Admin") && 
+		if(login_userNameEdt.getText().toString().equals("Admin") && 
 				login_passwordEdt.getText().toString().equals("123456")){
 			results = JSONArray.parseArray("[{\"code\" : 200, \"message\" : \"login success!\"},{\"uid\" : 1}]");
 		} else {
