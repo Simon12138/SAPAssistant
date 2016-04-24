@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/friend_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:text="lovebaobao42"/>
+        <TextView
+            android:id="@+id/friend_item_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:text="lovebaobao42@qq.com"/>
+    </LinearLayout>
+    <TextView android:id="@+id/friend_item_add"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:text="ADD"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/blue"/>
+    
+
+</LinearLayout>

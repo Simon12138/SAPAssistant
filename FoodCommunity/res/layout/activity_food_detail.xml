@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.seu.community.FoodDetailActivity" >
+
+    <ImageView
+        android:id="@+id/food_detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:scaleType="fitXY"
+        android:src="@drawable/logingicon" />
+
+    <RelativeLayout
+        android:id="@+id/food_detail_rating_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <RatingBar
+            android:id="@+id/food_detail_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:rating="0" />
+
+        <TextView
+            android:id="@+id/food_detail_rating_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="0.0"
+            android:textColor="@color/yellow"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/food_detail_desc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:padding="5dp" />
+
+    <ListView
+        android:id="@+id/food_detail_comments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" />
+
+    <LinearLayout
+        android:id="@+id/food_detail_comment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        <EditText android:id="@+id/food_detail_comment_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:hint="输入评论"/>
+        <Button android:id="@+id/food_detail_comment_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Send" />
+    </LinearLayout>
+
+</LinearLayout>

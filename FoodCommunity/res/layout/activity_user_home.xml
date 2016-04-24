@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.seu.community.UserHomeActivity" >
+    
+    <include layout="@layout/toolbar"/>
+	
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <ImageView android:id="@+id/user_home_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/logingicon"/>
+        <LinearLayout android:layout_width="fill_parent"
+        	android:layout_height="70dp"
+        	android:orientation="vertical" > 
+        	<TextView android:id="@+id/user_home_name"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="35dp"
+        	    android:padding="5dp"
+        	    android:textSize="18sp"
+        	    android:gravity="center_vertical"
+        	    android:text="lovebaobao42"/>
+        	<TextView android:id="@+id/user_home_email"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="35dp"
+        	    android:padding="5dp"
+        	    android:textSize="18sp"
+        	    android:gravity="center_vertical"
+        	    android:text="lovebaobao42@126.com"/>
+        </LinearLayout>
+    </LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:orientation="horizontal">
+	    <TextView android:id="@+id/user_home_my_friend"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:text="我的朋友"
+	        android:textColor="@color/white"
+	        android:background="@color/yellow"
+	        android:gravity="center"/>
+	    <TextView android:id="@+id/user_home_all_friend"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:text="所有朋友"
+	        android:background="@color/grey"
+	        android:gravity="center"/>
+	</LinearLayout>
+	
+	<ListView android:id="@+id/user_home_friend_list"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_margin="5dp" />
+</LinearLayout>

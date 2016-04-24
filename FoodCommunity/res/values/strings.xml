@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FoodCommunity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_all_food">AllFoodActivity</string>
+    <string name="title_activity_comment_shops">CommentShopsActivity</string>
+    <string name="title_activity_comment_foods">CommentFoodsActivity</string>
+
+    <color name="blue">#00dddd</color>
+    <color name="grey">#dddddd</color>
+    <color name="yellow">#F6BA5A</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <string name="title_activity_food_list">FoodListActivity</string>
+    <string name="title_activity_food_detail">FoodDetailActivity</string>
+    <string name="title_activity_user_home">UserHomeActivity</string>
+
+</resources>
